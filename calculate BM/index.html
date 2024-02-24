@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body> 
+    <div class=" bg-[#ADD8E6] text-[22px]  h-[100vh] w-[100%] flex justify-center align-center">
+        <div class="h-[400px] bg-[#06b6d4] mt-[150px] border border-solid border-green-300 border-[5px]">
+        <h1 class="bg-[#831843]  text-[30px] text-white flex justify-center">BMI calculator</h1>
+        <form class=" w-[420px] p-[10px] mt-[20px]">
+            <div class=" mx-auto ">
+                <p class="bg-gray-300 p-1 mb-2"><label>Height in cm: </label><input type="text" id="height"></p>
+                <p class="bg-gray-300 p-1 mb-2"><label>Weight in kg: </label><input type="text" id="weight"></p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded">Calculate</button>
+            </div>
+
+            <div>
+                <div id="results"></div>
+                <div id="weight-guide" class=" ">
+                    <h3>BMI Weight Guide</h3>
+                    <p>Under Weight = Less than 18.6</p>
+                    <p>Normal Range = 18.6 and 24.9</p>
+                    <p>Overweight = Greater than 24</p>
+            </div>
+            </div>
+
+        </form>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
